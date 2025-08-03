@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-/* body{
-  padding-bottom: 1000px;
-} */
-
 .big-div {
   background-image: linear-gradient(rgba(3, 9, 31, 0.68)), url(images/imgi_10_ourback.jpg);
   background-size: cover;
@@ -234,6 +230,9 @@
 }
 
 @media (max-width: 590px) {
+  .big-div {
+    height: 80vh;
+  }
   .div2-p1 {
     font-size: 1.6rem;
   }
@@ -252,6 +251,9 @@
   }
   .c1-p1 {
     font-size: 1rem;
+  }
+  .enroll-div {
+    height: 50vh;
   }
   .enroll-p1 {
     font-size: 1.2rem;
