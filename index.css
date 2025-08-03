@@ -1,0 +1,309 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* body{
+  padding-bottom: 1000px;
+} */
+
+.big-div {
+  background-image: linear-gradient(rgba(3, 9, 31, 0.68)), url(images/imgi_10_ourback.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;  
+  position: relative;
+}
+
+.offcanvas {
+  background-color: #4285f4;
+  color: white;
+}
+.canvas-closer {
+  width: 100%;
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin-top: -10px;
+}
+
+.nav-link {
+  font-size: 0.85rem;
+  color: white;
+  font-weight: 400;
+}
+.text-div {
+  max-width: 53%;
+}
+
+.big-div-p1 {
+  font-size: 3.6rem; 
+  font-weight: 700;
+}
+
+.big-div-p2 {
+  font-size: 0.9rem;
+}
+.visit-btn {
+  border-color: white;
+  border-radius: 0;
+  transition: 0.5s;
+  font-size: 0.85rem;
+  padding: 10px 35px;
+  margin-top: 20px;
+}
+
+.div2-p1 {
+  color: black;
+  font-weight: 700;
+  font-size: 2.25rem;
+  margin-bottom: 0px;
+}
+.div2-p2 {
+  color: #777777;
+  font-weight: 300;
+  font-size: 0.875rem;
+  margin-top: 0px;
+}
+
+.our-course-div {
+  gap: 40px;
+  padding: 10px 120px;
+}
+.c1 {
+  background-color: #e7f9ff;
+  border: none;
+  padding: 10px 20px;
+  transition: 0.5s;
+  border-radius: 13px;
+}
+.c1:hover {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+}
+.c1-p1 {
+  color: black;
+  font-weight: 700;
+}
+.c1-p2 {
+  color: #777777;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.img1,.img2,.img3 {
+  position: relative;
+  height: 31rem;
+  background: mediumturquoise;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+}
+
+.img1 {
+  background-image: linear-gradient(rgba(66, 133, 244, 0.0)), url(images/imgi_2_london.png);
+}
+.img2 {
+  background-image: linear-gradient(rgba(66, 133, 244, 0.0)), url(images/imgi_3_newyork.png);
+}
+.img3 {
+  background-image: linear-gradient(rgba(66, 133, 244, 0.0)), url(images/imgi_4_washington.png);
+}
+
+.img1::after, 
+.img2::after, 
+.img3::after {
+  position: absolute;
+  content: "";
+  height: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  background-image: linear-gradient(rgba(66, 133, 244, 0.5));
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.img1:hover:after,
+.img2:hover:after,
+.img3:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.5s;
+  opacity: 1;
+  content: "Ogunloke-Odo";
+}
+
+.fac-row {
+  row-gap: 30px; 
+  padding: 10px 100px;
+}
+
+.fac-row img {
+  width: 100%;
+  height: 15.625rem;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.fac-row .pp1 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: black;
+  margin-top: 15px;
+} 
+.fac-row .pp2 {
+  font-weight: 300;
+  font-size: 0.875rem;
+  color: #777777;
+}
+
+.enroll-div {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.68)), url(images/imgi_10_ourback.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  width: 80%;
+  margin-top: 140px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+.enroll-p1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  width: 70%;
+}
+.contact-btn {
+  border-color: white;
+  border-radius: 0;
+  transition: 0.5s;
+  font-size: 1rem;
+  padding: 10px 25px;
+  margin-top: 20px;
+}
+.about-div {
+  padding: 100px 320px 30px 320px;
+}
+
+.icons-div img {
+  margin: 10px 12px;
+  cursor: pointer;
+}
+
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .text-div {
+    max-width: 90%;
+  }
+  .about-div {
+    padding: 80px 100px 30px 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .big-div-p1 {
+    font-size: 2rem;
+  }
+  .big-div-p2 {
+    font-size: 0.8rem;
+  }
+  .text-div {
+    max-width: 90%;
+  }
+  .our-course-div {
+    padding: 10px 40px;
+  }
+  .enroll-p1 {
+    font-size: 1.5rem;
+  }
+  .about-div {
+    padding: 80px 50px 30px 50px;
+  }
+}
+
+@media (max-width: 590px) {
+  .div2-p1 {
+    font-size: 1.6rem;
+  }
+  .div2-p2 {
+    font-size: .9rem;
+  }
+  .fac-row {
+    padding: 10px 20px;
+  }
+  .img1,.img2,.img3 {
+    width: 22rem;
+    height: 20rem;
+  }
+  .our-course-div {
+    flex-direction: column;
+  }
+  .c1-p1 {
+    font-size: 1rem;
+  }
+  .enroll-p1 {
+    font-size: 1.2rem;
+  }
+  .student-card {
+    flex-direction: column;
+    row-gap: 10px;
+    text-align: center;
+  }
+  .contact-btn {
+    padding: 5px 10px;
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .big-div-p1 {
+    font-size: 1rem;
+  }
+  .big-div-p2 {
+    display: none;
+  }
+  .visit-btn {
+    padding: 2px 4px ;
+  }
+  .div2-p1 {
+    font-size: 1rem;
+  }
+  .div2-p2 {
+    font-size: .6rem;
+  }
+  .our-course-div {
+    padding: 20px 20px;
+  }
+  .c1 {
+    padding: 3px 0px;
+  }
+  .c1-p2 {
+    display: none;
+  }
+  .fac-row img {
+    width: 100%;
+    height: 8rem;
+  }
+  .card-body {
+    flex-direction: column;
+    padding: 0px 2px ;
+  }
+  .enroll-p1 {
+    font-size: 0.85rem;
+  }
+  
+}
+
+
