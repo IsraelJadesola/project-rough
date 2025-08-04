@@ -35,6 +35,11 @@
   font-weight: 700;
 }
 
+.row-div {
+  padding: 100px 100px; 
+  column-gap: 40px;
+}
+
 .big-img {
   width: 100%;
 }
@@ -125,11 +130,15 @@
 }
 
 @media (max-width: 768px) {  
+   
 }
 
 @media (max-width: 590px) {
   .big-div {
     height: 80vh;
+  }
+  .row-div {
+    padding: 50px 30px;
   }
 }
 
