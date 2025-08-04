@@ -5,10 +5,10 @@
 }
 
 .big-div {
-  background-image: linear-gradient(rgba(3, 9, 31, 0.68)), url(images/imgi_10_ourback.jpg);
+  background-image: linear-gradient(rgba(3, 9, 31, 0.68)), url(images/imgi_3_background.jpg);
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 50vh;
   overflow: hidden;  
   position: relative;
 }
@@ -29,25 +29,10 @@
   color: white;
   font-weight: 400;
 }
-.text-div {
-  max-width: 53%;
-}
 
 .big-div-p1 {
-  font-size: 3.6rem; 
-  font-weight: 700;
-}
-
-.big-div-p2 {
-  font-size: 0.9rem;
-}
-.visit-btn {
-  border-color: white;
-  border-radius: 0;
-  transition: 0.5s;
-  font-size: 0.85rem;
-  padding: 10px 35px;
-  margin-top: 20px;
+  font-size: 2.6rem; 
+  font-weight: 500;
 }
 
 .div2-p1 {
@@ -67,6 +52,7 @@
   gap: 40px;
   padding: 10px 120px;
 }
+
 .c1 {
   background-color: #e7f9ff;
   border: none;
@@ -74,6 +60,7 @@
   transition: 0.5s;
   border-radius: 13px;
 }
+
 .c1:hover {
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
 }
@@ -86,58 +73,6 @@
   font-weight: 400;
   font-size: 14px;
   margin-top: 20px;
-}
-
-.img1,.img2,.img3 {
-  position: relative;
-  height: 31rem;
-  background: mediumturquoise;
-  background-size: cover;
-  background-position: center;
-  border-radius: 15px;
-}
-
-.img1 {
-  background-image: linear-gradient(rgba(66, 133, 244, 0.0)), url(images/imgi_2_london.png);
-}
-.img2 {
-  background-image: linear-gradient(rgba(66, 133, 244, 0.0)), url(images/imgi_3_newyork.png);
-}
-.img3 {
-  background-image: linear-gradient(rgba(66, 133, 244, 0.0)), url(images/imgi_4_washington.png);
-}
-
-.img1::after, 
-.img2::after, 
-.img3::after {
-  position: absolute;
-  content: "";
-  height: 0%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 25px;
-  text-align: center;
-  color: white;
-  font-weight: bold;
-  background-image: linear-gradient(rgba(66, 133, 244, 0.5));
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  border-radius: 15px;
-  transition: all 0.5s;
-}
-
-.img1:hover:after,
-.img2:hover:after,
-.img3:hover:after {
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-  transition: all 0.5s;
-  opacity: 1;
-  content: "Ogunloke-Odo";
 }
 
 .fac-row {
@@ -164,31 +99,6 @@
   color: #777777;
 }
 
-.enroll-div {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.68)), url(images/imgi_10_ourback.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 60vh;
-  width: 80%;
-  margin-top: 140px;
-  border-radius: 10px;
-  color: white;
-  text-align: center;
-}
-
-.enroll-p1 {
-  font-size: 2.25rem;
-  font-weight: 700;
-  width: 70%;
-}
-.contact-btn {
-  border-color: white;
-  border-radius: 0;
-  transition: 0.5s;
-  font-size: 1rem;
-  padding: 10px 25px;
-  margin-top: 20px;
-}
 .about-div {
   padding: 100px 320px 30px 320px;
 }
@@ -212,21 +122,19 @@
   .big-div-p1 {
     font-size: 2rem;
   }
-  .big-div-p2 {
-    font-size: 0.8rem;
-  }
   .text-div {
     max-width: 90%;
   }
   .our-course-div {
     padding: 10px 40px;
   }
-  .enroll-p1 {
-    font-size: 1.5rem;
-  }
   .about-div {
     padding: 80px 50px 30px 50px;
   }
+}
+
+@media (max-width: 768px) {
+
 }
 
 @media (max-width: 590px) {
@@ -242,42 +150,17 @@
   .fac-row {
     padding: 10px 20px;
   }
-  .img1,.img2,.img3 {
-    width: 22rem;
-    height: 20rem;
-  }
   .our-course-div {
     flex-direction: column;
   }
   .c1-p1 {
     font-size: 1rem;
   }
-  .enroll-div {
-    height: 50vh;
-  }
-  .enroll-p1 {
-    font-size: 1.2rem;
-  }
-  .student-card {
-    flex-direction: column;
-    row-gap: 10px;
-    text-align: center;
-  }
-  .contact-btn {
-    padding: 5px 10px;
-    font-size: 0.7rem;
-  }
 }
 
 @media (max-width: 300px) {
   .big-div-p1 {
     font-size: 1rem;
-  }
-  .big-div-p2 {
-    display: none;
-  }
-  .visit-btn {
-    padding: 2px 4px ;
   }
   .div2-p1 {
     font-size: 1rem;
@@ -301,8 +184,5 @@
   .card-body {
     flex-direction: column;
     padding: 0px 2px ;
-  }
-  .enroll-p1 {
-    font-size: 0.85rem;
   }
 }

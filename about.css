@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.big-div {
+  background-image: linear-gradient(rgba(3, 9, 31, 0.68)), url(images/imgi_3_background.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  overflow: hidden;  
+  position: relative;
+}
+
+.offcanvas {
+  background-color: #4285f4;
+  color: white;
+}
+.canvas-closer {
+  width: 100%;
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin-top: -10px;
+}
+
+.nav-link {
+  font-size: 0.85rem;
+  color: white;
+  font-weight: 400;
+}
+
+.big-div-p1 {
+  font-size: 2.6rem; 
+  font-weight: 500;
+}
+
+.text-img-div {
+  padding: 10px 120px;
+  margin-top: 150px;
+}
+
+.div2-p1 {
+  color: black;
+  font-weight: 700;
+  font-size: clamp(2.2rem, 2vw, 3rem);
+  margin-bottom: 0px;
+}
+.div2-p2 {
+  color: #777777;
+  font-weight: 300;
+  font-size: 0.89rem;
+  margin-top: 0px;
+}
+
+.about-div {
+  padding: 100px 320px 30px 320px;
+}
+
+.icons-div img {
+  margin: 10px 12px;
+  cursor: pointer;
+}
+
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .text-img-div {
+    margin-top: 80px;
+  }
+  .text-div {
+    max-width: 90%;
+  }
+  .about-div {
+    padding: 80px 100px 30px 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .big-div-p1 {
+    font-size: 2rem;
+  }
+  .text-div {
+    max-width: 90%;
+  }
+  .text-img-div {
+    padding: 20px 50px;
+    margin-top: 50px;
+  }
+  .about-div {
+    padding: 80px 50px 30px 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-img-div {
+    margin-top: 50px;
+  }
+  .div2-p1 {
+    margin-bottom: 20px;
+  }
+
+  .div2-p2 {
+    display: none;
+  }
+}
+
+@media (max-width: 590px) {
+  .big-div {
+    height: 80vh;
+  }
+  .div2-p1 {
+    font-size: 1.6rem;
+  }
+  .div2-p2 {
+    font-size: 0.7rem;
+  }
+
+  .text-img-div {
+    align-items: center;
+    flex-direction: column-reverse;
+    padding: 20px 10px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  #txt-row-img{
+    width: 70%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 300px) {
+  .big-div-p1 {
+    font-size: 1rem;
+  }
+  .visit-btn {
+    padding: 2px 4px ;
+  }
+  .div2-p1 {
+    font-size: 1rem;
+  }
+  .div2-p2 {
+    font-size: .6rem;
+  }
+}
