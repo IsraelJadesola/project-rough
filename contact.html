@@ -4,16 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About page</title>
+  <title>CONTACT US</title>
   <link rel="stylesheet" href="bootstrap.css">
-  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="contact.css">
 </head>
 
 <body>
   <div class="container-fluid gx-0 big-div d-flex">
     <nav class="navbar navbar-expand-lg bg-transparent py-md-4 py-xs-2 d-flex justify-content-center"
       style="position: absolute; top: 0; right: 0; left: 0; z-index: 1000;">
-      <div class="container-fluid px-sm-5">
+      <div class="container-fluid px-sm-2">
         <a class="navbar-brand mx-sm-5" href="#">
           <img src="images/imgi_1_logo.png" class="img-fluid" width="150" alt="">
         </a>
@@ -75,23 +75,47 @@
     <!-- NAVBAR ENDS HERE -->
 
     <div class="container-fluid text-div text-center flex-column d-flex justify-content-center align-items-center">
-      <p class="text-light big-div-p1">ABOUT US</p>
+      <p class="text-light big-div-p1">Contact Us</p>
     </div>
   </div>
 
-  <div class="container-fluid div-2 mt-5">
-    <div class="row row-cols-md-2 d-flex justify-content-center text-img-div">
-      <div class="col">
-        <p class="div2-p1">We are the world's largest university</p>
-        <p class="div2-p2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Non quas maiores illo sit aut reiciendis perferendis odit quibusdam rem. Enim voluptatibus
-          quas eaque facere nihil delectus iste assumenda, minima asperiores distinctio quaerat facilis
-          reprehenderit ex necessitatibus molestias, dolorem quoscupiditate.
-        </p>
-        <button class="btn btn-outline-primary explore-btn" style="padding: 8.5px 35px; border-radius: 0px; font-size: 0.85rem;">EXPLORE NOW</button>
+  <div class="container-fluid d-flex justify-content-center mt-5 pt-5 map-img">
+  </div>
+
+  <div class="container-fluid details-form-div-wrap">
+    <div class="d-flex justify-content-around flex-md-row flex-sm-column details-form-div">
+      <div class=" d-flex flex-md-column flex-sm-column align-items-md-start align-items-sm-center input-div">
+        <div class="d-flex">
+          <div class="d-flex align-items-center"><img src="icons/imgi_31_default.png" width="100%" style="margin-top: -10px;" alt=""></div>
+          <div class="ms-4 mb-md-0 mb-sm-3 details-div">
+            <p class="rows-p1">XYZ Road, ABC Building</p>
+            <p class="rows-p2">Adenike, Ogbmosho</p>
+          </div>
+        </div>
+
+        <div class="d-flex">
+          <div class="d-flex align-items-center"><img src="icons/imgi_32_default.png" width="100%" style="margin-top: -10px;" alt=""></div>
+          <div class="ms-4 mb-md-0 mb-sm-3 details-div">
+            <p class="rows-p1">+234 9131007061</p>
+            <p class="rows-p2">Monday to Saturday, 10AM to 6pm</p>
+          </div>
+        </div>
+
+        <div class="d-flex">
+          <div class="d-flex align-items-center"><img src="icons/imgi_33_default.png" width="100%" style="margin-top: -10px;" alt=""></div>
+          <div class="ms-4 mb-md-0 mb-sm-3 details-div">
+            <p class="rows-p1">israeljadesola20000@gmail.com</p>
+            <p class="rows-p2">Email us Your Query</p>
+          </div>
+        </div>
       </div>
-      <div class="col img-col">
-        <img src="images/imgi_2_about.jpg" class="img-fluid" id="txt-row-img" alt="">
+
+      <div class="align-self-center mt-md-0 mt-sm-5 form-div">
+        <input type="text" class="input-1" placeholder="Enter Name">
+        <input type="email" class="input-1" placeholder="Enter emial address">
+        <input type="text" class="input-1" placeholder="Enter subject">
+        <textarea name="" rows="" id="txt-area" placeholder="Message"></textarea>
+        <button class="btn btn-outline-primary post-comment-btn">EXPLORE NOW</button>
       </div>
     </div>
   </div>
