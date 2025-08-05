@@ -38,20 +38,20 @@
 .map-img {
   position: relative;
   height: 70vh; 
-  background-position: center; 
   background-size: cover;
-  transition: backround-image 0.7s;
+  transition: 0.7s;
+  background-repeat: no-repeat;
   width: 80%;
   background-image: linear-gradient(rgba(0, 0, 0, 0)), url(images/imgi_31_default.png);
 }
 
-.map-img:hover::after {
-  position: absolute;
-  transition: 0.7s;
-}
-
 .map-img:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7)), url(images/imgi_31_default.png);
+  height: 70vh; 
+  transition: 0.7s;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 80%;
 }
 
 
@@ -148,6 +148,11 @@
   .big-div {
     height: 80vh;
   }
+
+  .map-img {
+    height: 40vh;
+  }
+
   .form-div {
     width: 80%;
     margin-top: 50px;
