@@ -99,6 +99,23 @@
   color: #777777;
 }
 
+.visit-btn {
+  border: 0.5px solid #4285f4;
+  border-radius: 0;
+  transition: 0.5s;
+  font-size: 0.85rem;
+  padding: 10px 35px;
+  margin-top: 20px;
+  background-color: transparent;
+  color: #4285f4;
+}
+
+.visit-btn:hover {
+  background-color: #4285f4;
+  color: white;
+}
+
+
 .about-div {
   padding: 100px 320px 30px 320px;
 }

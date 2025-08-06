@@ -229,6 +229,17 @@
   }
 }
 
+@media (max-width:768px) {
+  .fac-row img{
+    margin-bottom: -6px;
+  }
+  
+  .pp2{
+    margin-top: -8px;
+    margin-bottom: 30px;
+  } 
+}
+
 @media (max-width: 590px) {
   .big-div {
     height: 80vh;
